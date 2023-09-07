@@ -1,0 +1,10 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: coral;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin-left: 20px;
+}
