@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script>
+            function f1() {
+                if (rd3.checked) {
+                    p1.innerHTML = "Correct!"
+                    p1.style.color = "green"
+                } else {
+                    p1.innerHTML = "Incorrect"
+                    p1.style.color = "red"
+                    ans1.innerHTML = "correct answer: Saltwater environments"
+                }
+                if (rd6.checked) {
+                    p2.innerHTML = "Correct!"
+                    p3.style.color = "green"
+                } else {
+                    p2.innerHTML = "Incorrect"
+                    p2.style.color = "red"
+                    ans2.innerHTML = "correct answer: It turns mostly white with rich brown, black, and gray on the face in summer."
+                }
+                if (rd8.checked) {
+                    p3.innerHTML = "Correct!"
+                    p3.style.color = "green"
+                } else {
+                    p3.innerHTML = "Incorrect"
+                    p3.style.color = "red"
+                    ans3.innerHTML = "correct answer: They can be affected by oil spills and pollution"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Long Tailed Duck Excercises</h1>
+        <p>Answer each question and then hit submit to see your score and the correct answers. Goodluck!</p>
+        1) What is the preferred habitat of the Long-tailed Duck during the winter months? <label id="p1"></label><br />
+        <input type="radio" id="rd1" name="habitat"> Arctic tundra pools <br>
+        <input type="radio" id="rd2" name="habitat"> Freshwater lakes <br>
+        <input type="radio" id="rd3" name="habitat"> Saltwater environments <br>
+        <label id="ans1"></label><br>
+        2) How does the male Long-tailed Duck's plumage change between summer and winter? <label id="p2"></label><br>
+        <input type="radio" id="rd4" name="looks"> It remains black with a white face patch throughout the year <br>
+        <input type="radio" id="rd5" name="looks"> It becomes entirely black in winter <br>
+        <input type="radio" id="rd6" name="looks"> It turns mostly white with rich brown, black, and gray on the face in summer<br>
+        <label id="ans2"></label><br>
+        3) Why are dense concentrations of Long-tailed Ducks vulnerable to environmental threats in northern seas? <label
+            id="p3"></label><br />
+        <input type="radio" id="rd7" name="env"> They are sensitive to cold temperatures <br>
+        <input type="radio" id="rd8" name="env"> They can be affected by oil spills and pollution <br>
+        <input type="radio" id="rd9" name="env"> Due to their large size <br>
+        <label id="ans3"></label><br>
+        <input type="button" value="submit" onclick="f1()"><br>
+    </body>
+</html>

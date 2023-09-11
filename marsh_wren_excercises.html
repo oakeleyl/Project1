@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script>
+            function f1 (){
+                if(op1.checked && (!op2.checked) && (op3.checked) && (op4.checked)){
+                    p1.innerHTML="correct!"
+                    p1.style.color="green"
+                }else{
+                    p1.innerHTML="incorrect"
+                    p1.style.color="red"
+                    ans1.innerHTML = "correct answer: black and white streaks, broad white eyeline, a brown cap"
+                }
+                if(rd1.checked){
+                    p2.innerHTML="correct!"
+                    p2.style.color="green"
+                }else{
+                    p2.innerHTML="incorrect"
+                    p1.style.color="red"
+                    ans2.innerHTML = "correct answer: True"
+                }
+                if(rd3.checked){
+                    p3.innerHTML="correct!"
+                    p3.style.color="green"
+                }else{
+                    p3.innerHTML="incorrect"
+                    p1.style.color="red"
+                    ans3.innerHTML = "correct answer: True"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Marsh Wren Excercises</h1>
+        <p>Answer each question and then hit submit to see your score and the correct answers. Goodluck!</p>
+        1) Which of these is part of the Marsh Wrens appearance? (check all that apply):<label id="p1"></label><br/>
+        <input type="checkbox" id="op1"> black and white streaks on their backs <br>
+        <input type="checkbox" id="op2"> a white cap  <br>
+        <input type="checkbox" id="op3"> broad white eyeline <br>
+        <input type="checkbox" id="op4"> a brown cap <br>
+        <label id="ans1"></label><br>
+        2) True or False: Marsh Wrens are native to North America <label id="p2"></label><br>
+        <input type="radio" id="rd1" name="tf1"> True <br>
+        <input type="radio" id="rd2" name="tf1"> False <br>
+        <label id="ans2"></label><br>
+        3) True or False: Marsh Wrens are songbirds <label id="p3"></label><br/>
+        <input type="radio" id="rd3" name="tf2"> True <br>
+        <input type="radio" id="rd4" name="tf2"> False <br>
+        <label id="ans3"></label><br>
+        <input type="button" value="submit" onclick="f1()"><br>
+    </body>
+</html>
