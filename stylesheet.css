@@ -51,4 +51,20 @@ h4{
 .birds{
   display: list-item;    
  } 
+ .btn button {
+
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #ffb84e;
+    border: 1px solid coral;
+    /* Green background */
+    /* Green border */
+    color: black;
+
+    /* White text */
+}
+.btn button:hover {
+    background-color: rgb(202, 132, 202);
+}
 
