@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script>
+            function f1() {
+                if (rd2.checked) {
+                    p1.innerHTML = "Correct!"
+                    p1.style.color = "green"
+                } else {
+                    p1.innerHTML = "Incorrect"
+                    p1.style.color = "red"
+                    ans1.innerHTML = "correct answer: False"
+                }
+                if (rd3.checked) {
+                    p2.innerHTML = "Correct!"
+                    p2.style.color = "green"
+                } else {
+                    p2.innerHTML = "Incorrect"
+                    p2.style.color = "red"
+                    ans2.innerHTML = "correct answer: True"
+                }
+                if (rd6.checked) {
+                    p3.innerHTML = "Correct!"
+                    p3.style.color = "green"
+                } else {
+                    p3.innerHTML = "Incorrect"
+                    p3.style.color = "red"
+                    ans3.innerHTML = "correct answer: False"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Northern Harrier Excercises</h1>
+        <p>Answer each question and then hit submit to see your score and the correct answers. Goodluck!</p>
+        1) The Northern Harrier migrates to more northern areas in the winter <label id="p1"></label><br>
+        <input type="radio" id="rd1" name="tf1"> True <br>
+        <input type="radio" id="rd2" name="tf1"> False <br>
+        <label id="ans1"></label><br>
+        2) The hen harrier is one of the rarest birds of prey <label id="p2"></label><br>
+        <input type="radio" id="rd3" name="tf2"> True <br>
+        <input type="radio" id="rd4" name="tf2"> False <br>
+        <label id="ans2"></label><br>
+        3) The Northern Harrier weighs on average 0.19 kg <label id="p3"></label><br>
+        <input type="radio" id="rd5" name="tf3"> True <br>
+        <input type="radio" id="rd6" name="tf3"> False <br>
+        <label id="ans3"></label><br>
+        <input type="button" value="submit" onclick="f1()"><br>
+    </body>
+</html>

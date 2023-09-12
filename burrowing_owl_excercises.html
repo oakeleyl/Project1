@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script>
+            function f1() {
+                if (op1.checked && (!op2.checked) && (op3.checked) && (!op4.checked) && (op5.checked)) {
+                    p1.innerHTML = "Correct!"
+                    p1.style.color = "green"
+                } else {
+                    p1.innerHTML = "Incorrect"
+                    p1.style.color = "red"
+                    ans1.innerHTML = "correct answer: Habitat loss, Pesticide use and Poisoning of prairie dog colonies"
+                }
+
+                if (txtbox1.value == "Athene cunicularia" || txtbox1.value == "Athene") {
+                    p2.innerHTML = "Correct!"
+                    p2.style.color = "green"
+                } else {
+                    p2.innerHTML = "Incorrect"
+                    p1.style.color = "red"
+                    ans2.innerHTML = "correct answer: Athene or Athene cunicularia"
+                }
+                if (rd1.checked) {
+                    p3.innerHTML = "Correct!"
+                    p3.style.color = "green"
+                } else {
+                    p3.innerHTML = "Incorrect"
+                    p3.style.color = "red"
+                    ans3.innerHTML = "correct answer: True"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Burrowing Owl Excercises</h1>
+        <p>Answer each question and then hit submit to see your score and the correct answers. Goodluck!</p>
+        1) Why has the Burrowing Owl population been declining? (select all that apply): <label id="p1"></label><br />
+        <input type="checkbox" id="op1"> Habitat loss <br>
+        <input type="checkbox" id="op2"> diseases <br>
+        <input type="checkbox" id="op3"> Pesticide use <br>
+        <input type="checkbox" id="op4"> invasive species<br>
+        <input type="checkbox" id="op5"> Poisoning of prairie dog colonies<br>
+        <label id="ans1"></label><br>
+        2) What is the Burrowing owls scientific name?: <label id="p2"></label><br>
+        <input type="text" id="txtbox1"><br>
+        <label id="ans2"></label><br>
+        3) True or False: Burrowing owls consume agricultural pests and help prevent the spread of diseases: <label
+            id="p3"></label><br />
+        <input type="radio" id="rd1" name="tf"> True <br>
+        <input type="radio" id="rd2" name="tf"> False <br>
+        <label id="ans3"></label><br>
+        <input type="button" value="submit" onclick="f1()"><br>
+    </body>
+</html>
