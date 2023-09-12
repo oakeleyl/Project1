@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script>
+            function f1() {
+                if ((!op1.checked) && (op2.checked) && (op3.checked) && (op4.checked) && (!op5.checked)) {
+                    p1.innerHTML = "Correct!"
+                    p1.style.color = "green"
+                } else {
+                    p1.innerHTML = "Incorrect"
+                    p1.style.color = "red"
+                    ans1.innerHTML = "correct answer: gulls, feral cats and raccoons"
+                }
+
+                if (txtbox1.value == "North America" || txtbox1.value == "north america") {
+                    p2.innerHTML = "Correct!"
+                    p2.style.color = "green"
+                } else {
+                    p2.innerHTML = "Incorrect"
+                    p2.style.color = "red"
+                    ans2.innerHTML = "correct answer: North America"
+                }
+                if (rd1.checked) {
+                    p3.innerHTML = "Correct!"
+                    p3.style.color = "green"
+                } else {
+                    p3.innerHTML = "Incorrect"
+                    p3.style.color = "red"
+                    ans3.innerHTML = "correct answer: True"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Piping Plover Excercises</h1>
+        <p>Answer each question and then hit submit to see your score and the correct answers. Goodluck!</p>
+        1) What are some of the piping plovers most common predetors? (select all that apply) <label id="p1"></label><br />
+        <input type="checkbox" id="op1"> bears<br>
+        <input type="checkbox" id="op2"> gulls <br>
+        <input type="checkbox" id="op3"> feral cats <br>
+        <input type="checkbox" id="op4"> raccoons<br>
+        <input type="checkbox" id="op5"> wolves<br>
+        <label id="ans1"></label><br>
+        2) Fill in the blank: The Piping plover nests and feeds along coastal sand and gravel beaches in ___________ <label id="p2"></label><br>
+        <input type="text" id="txtbox1"><br>
+        <label id="ans2"></label><br>
+        3) True or False: Human activity near plover nests can attract predators <label
+            id="p3"></label><br />
+        <input type="radio" id="rd1" name="tf"> True <br>
+        <input type="radio" id="rd2" name="tf"> False <br>
+        <label id="ans3"></label><br>
+        <input type="button" value="submit" onclick="f1()"><br>
+    </body>
+</html>
