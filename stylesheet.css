@@ -1,10 +1,13 @@
 body{
     font-family: 'Times New Roman', Times, serif;
+
     background-color: coral;
+
     text-align: center;
 }
 h1{
     text-align: center;
+
 }
 p{
     margin-left: 20px;
@@ -12,7 +15,40 @@ p{
 h4{
     font-style:italic;
 }
-#FWSFocus{
-    margin-left: 20px;
-    color: blue;
+
+#header{
+    border: 5px solid black;
+    background-image: url("https://www.socorronm.org/wp-content/uploads/2012/11/bosque-del-apache.jpg");
 }
+#bird{
+    border: 5px solid black;
+    background-color: grey;
+    scroll-padding-top: 5px;
+}
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.birds{
+  display: list-item;    
+ } 
+
